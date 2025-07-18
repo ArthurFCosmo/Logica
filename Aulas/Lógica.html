@@ -11,7 +11,7 @@
 
         <h1>Lógica de programação</h1>
 
-        <section>
+        <section id="introducao">
             <h2>Algoritmo</h2>
 
             <h3>O que são? </h3>
@@ -24,7 +24,7 @@
             <p>O portugol é uma linguagem de teste, que serve para você testar sua LÓGICA DE PROGRAMAÇÃO antes de passar para uma linguagem de programação. </p>
         </section>
 
-        <section>
+        <section id="ide">
             <h2>IDE</h2>
 
             <h3>Visualg</h3>
@@ -39,7 +39,7 @@
             <li>fimalgoritmo – Fim do código</li>
         </section>
 
-        <section>
+        <section id="variaveis">
             <h2>Variáveis</h2>  
 
             <p>Para criar uma <mark>variável</mark>, precisamos declara-la e tipa-la. Por exemplo:</p>
@@ -58,9 +58,14 @@
                 <li>Não pode ter letras com acento.</li>
                 <li>Não pode ser uma palavra reservada, como por exemplo: <mark>var, algoritmo, inicio, etc.</mark></li>
             </div>
+
+            <h2>Exemplo de uso de uma variável</h2>
+            <p>Exibindo um olá mundo numa variável de texto:</p>
+
+            <img class="imagem50" src="media/img02 olamundo.png" alt="exemplo">
         </section>
 
-        <section>
+        <section id="tipos">
             <h2>Tipos primitivos</h2>
             <p>Tipos são categorias que você deve usar para descrever suas variáveis.</p>
             <p>São eles:</p>
@@ -73,20 +78,14 @@
             </div>
         </section>
 
-        <section>
+        <section id="print">
             <h2>Comandos importantes</h2>
             <h2>1. escreva("<span class="exemplo-inserir-claro"> [Mensagem] </span>")</h2>
             <p>Esse comando escreverá a mensagem escolhida na tela de saída do dispositivo. Se você usar o comando parecido com ele, o <mark class="comando">escreval("<span class="exemplo-inserir"> [Mensagem] </span>")</mark>, que faz exatamente a mesma coisa, mas pula uma linha no final.</p>
         </section>
 
-        <section>
-            <h2>Exemplo de uso de uma variável</h2>
-            <p>Exibindo um olá mundo numa variável de texto:</p>
 
-            <img class="imagem50" src="media/img02 olamundo.png" alt="exemplo">
-        </section>
-
-        <section>
+        <section id="comandos-de-entrada">
             <h2>Comandos de entrada</h2>
             <p>Comandos de entrada servem para receber informações do usuário.</p>
 
@@ -94,7 +93,7 @@
             <p>Com esse comando, aparecerá um cursor de texto no terminal, permitindo o usuário inserir dados. Quando o usuário apertar enter, esses dados serão armazenados na <mark>variável</mark> escolhida.</p>
         </section>
 
-        <section>
+        <section id="operacoes-matematicas-basicas">
             <h2>Operações matemáticas báscias</h2>
             
             <p>Os operadores funcionam da seguinte maneira:</p>
@@ -107,7 +106,7 @@
             <img class="imagem100" src="media/img05 funcoesaritmeticas.png" alt="funcoes-aritimeticas">
         </section>
 
-        <section>
+        <section id="operadores-relacionais">
             <h2>Operadores relacionais</h2>
 
             <p>Os operadores relacionais funcionam exatamente da mesma maneira que na matemática, são eles:</p>
@@ -122,14 +121,43 @@
             <p>O resultado ao executar esse código seria <mark>Falso</mark>, pois <mark>A</mark> não é maior que <mark>B</mark>.</p>
         </section>
 
-        <section>
+        <section id="operadores-logicos">
             <h2>Operadores lógicos</h2>
 
             <p>Os operadores lógicos são muito simples, são eles: <mark>E</mark>, <mark>Ou</mark> e <mark>Não</mark>.</p>
         </section>
 
-        <section>
+        <section id="ordem-de-procedencia">
             <img class="imagem50" src="media/img08 ordemdeprocedencia.png" alt="ordem-de-procedencia">
+        </section>
+
+        <section id="estruturas-de-repeticao">
+            <h2>Estruturas de repetição</h2>
+            <p>Estruturas de repetição servem para fazer uma tarefa repetitiva várias vezes com apenas um comando.</p>
+
+            <h3>Laço while</h3>
+            <p>O laço <mark>while</mark> funciona no seguinte esquema: ENQUANTO UM <mark>EVENTO</mark> NÃO OCORRER, REPITA UM BLOCO DE CÓDIGO. Recebendo à seguinte estrutura:</p>
+
+            <img class="imagem50" src="media/img09 while.png" alt="while">
+
+            <p>Geralmente colocamos <mark>contadores</mark> dentro do bloco de código do laço, que quando chegam em determinado valor quebram o laço.</p>
+            <p>Esse laço tem o teste lógico no início, ou seja, primeiro ele lê a <mark>condição</mark>, depois executa o bloco de código interno.</p>
+
+            <h3>Laço do/repeat</h3>
+            <p>Funciona do mesmo jeito que o while, mas com lógica reversa: REPITA UM BLOCO DE CÓDIGO ATÉ UM <mark>EVENTO</mark> OCORRER. Recebendo a seguinte estrutura:</p>
+
+            <img class="imagem50" src="media/img10 repeat.png" alt="repeat">
+
+            <p>Esse laço tem o teste lógico no final, ou seja, primeiro ele executa o bloco de código, depois ele lê a <mark>condição</mark>.</p>
+
+            <h3>Laço for</h3>
+            <p>Esse laço funciona no seguinte esquema: Para uma <mark>variável</mark> executaremos o código por tempo determinado, num passo determinado. Recebendo a seguinte estrutura:</p>
+
+            <img class="imagem50" src="media/img11 for.png" alt="for">
+
+            <p>Nesse exemplo, o algoritmo escreveria o valor de <mark>C</mark> 10 vezes, o valor do passo indica de quantos em quantos a contagem do laço vai avançar, por exemplo, se o passo fosse <mark>2</mark>, o algoritmo só escreveria o valor de <mark>C</mark> 5 vezes, pois iria de 1 a 10 pulando de 2 em 2.</p>
+
+            <p>Algumas linguagens, como python, permitem que voce execute o laço for usando como contagem o número de itens em uma lista. Neses casos o código ficaria <mark class="comando">for x in lista</mark>, e o laço executaria seu bloco de código para cada item da lista.</p>
         </section>
     </main>
 
