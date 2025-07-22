@@ -156,8 +156,46 @@
             <img class="imagem50" src="media/img11 for.png" alt="for">
 
             <p>Nesse exemplo, o algoritmo escreveria o valor de <mark>C</mark> 10 vezes, o valor do passo indica de quantos em quantos a contagem do laço vai avançar, por exemplo, se o passo fosse <mark>2</mark>, o algoritmo só escreveria o valor de <mark>C</mark> 5 vezes, pois iria de 1 a 10 pulando de 2 em 2.</p>
-
             <p>Algumas linguagens, como python, permitem que voce execute o laço for usando como contagem o número de itens em uma lista. Neses casos o código ficaria <mark class="comando">for x in lista</mark>, e o laço executaria seu bloco de código para cada item da lista.</p>
+        </section>
+
+        <section id="procedimentos">
+            <h2>Procedimentos</h2>
+
+            <h3>O que são?</h3>
+            <p>Procedimentos são rotinas de códigos. Eles são usados quando temos um <mark>bloco de código</mark> que se repete várias vezes durante o algoritmo, nos fazendo perder tempo e espaço redigitando a mesma coisa várias vezes. Então, nós <mark>declaramos</mark> um procedimento com todos os passos repetitivos, e assim que precisarmos usa-los novamente, basta chamar o procedimento.</p>
+            <p>Ex:</p>
+
+            <img class="imagem50" src="media/img12 rotina.png" alt="rotina">
+
+            <img class="imagem50" src="media/img13 rotina2.png" alt="rotina-2">
+
+            <p>Devemos <mark>declarar</mark> os procedimentos assim como declaramos as variáveis, no começo do código. Uma característica importante dos procedimentos, é que eles <mark>não retornam variáveis</mark> nem <mark>geram valores</mark> pro código principal.</p>
+
+            <img class="imagem50" src="media/img14 declarandoprocedimento.png" alt="procedimento">
+
+            <h3>Parâmetros</h3>
+            <p>Ao declarar um procedimento, podemos passar <mark>parâmetros</mark> que serão usados por ele.</p>
+            <p>Nesse exemplo, recebemos dois <mark>parâmetros</mark>, que são números inteiros, e eles serão somados, porém não retornará nenhum <mark>valor</mark>, pois isso é feito através de <mark class="comando">funções</mark>, não de procedimentos. No lugar disso, ele apenas vai dar um <mark>print</mark>.</p>
+
+            <img class="imagem50" src="media/img15 somaprocedimento.png" alt="soma-procedimentos">
+
+            <h3>Escopo</h3>
+            <p>No exemplo anterior, percebemos que os valores passados como <mark>parâmetros</mark> se armazenam em <mark>variáveis temporárias</mark>, que só funcionam enquanto aquele procedimento está rodando. Isso se chama variável de <mark>escopo local</mark>, pois só funcionam em certa parte do código, e depois desaparecem. Isso acontece com os <mark>parâmetros</mark>, e com variáveis declaradas dentro do procedimento.</p>
+
+            <p>Podemos fazer com que procedimentos alterem o valor de uma variável global, isso chama-se de passar <mark>parâmetro por referência</mark>. Fazendo assim, podemos ter uma variável global <mark class="comando">X</mark>, e um procedimento que faça cálculos usando <mark class="comando">X</mark>, ao terminar o procedimento, se os parâmetros foram passados por <mark>referência</mark>, o valor de <mark class="comando">X</mark> será alterado. Se foi passada por <mark>valor</mark>, continuará o mesmo.</p>
+        </section>
+
+        <section id="funcoes">
+            <h2>Funções</h2>
+
+            <h3>O que são?</h3>
+            <p>Funções são rotinas assim como os <mark>procedimentos</mark>, mas possuem um diferencial: elas <mark>retornam valores</mark> a partir dos parâmetros.</p>
+            <p>Ex:</p>
+
+            <img class="imagem50" src="media/img16 funcao.png" alt="funcao">
+
+            <p>Essa função retornaria um <mark>valor S</mark>, que no caso seria a soma dos dois <mark>parâmetros</mark>. Essa é a principal diferença entre uma função e um procedimento: o <mark>retorno</mark> de valores. As funções também recebem configurações de escopo.</p>
         </section>
     </main>
 
