@@ -7,6 +7,31 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <nav>
+        <h2 class="cabecalho-menu-aulas" onclick="clickMenu()">
+        Índice
+        </h2>
+        <menu id="itens">
+            <ul>
+                <li><a href="#introducao">Algoritmo</a></li>
+                <li><a href="#ide">IDE</a></li>
+                <li><a href="#variaveis">Variáveis</a></li>
+                <li><a href="#tipos">Tipos</a></li>
+                <li><a href="#print">Print</a></li>
+                <li><a href="#comandos-de-entrada">Comandos de entrada</a></li>
+                <li><a href="#operacoes-matematicas-basicas">Operações matemáticas báscias</a></li>
+                <li><a href="#operadores-relacionais">Operadores relacionais</a></li>
+                <li><a href="#operadores-logicos">Operadores lógicos</a></li>
+                <li><a href="#estruturas-de-repeticao">Estruturas de repetição</a></li>
+                <li><a href="#procedimentos">Procedimentos</a></li>
+                <li><a href="#funcoes">Funções</a></li>
+                <li><a href="#vetores">Vetores</a></li>
+                <li><a href="#matrizes">Matrizes</a></li>
+             </ul>
+        </menu>
+    </nav>
+
+
     <main>
 
         <h1>Lógica de programação</h1>
@@ -232,5 +257,15 @@
             <p>Uma matriz pode ter várias dimensões, o que fica difícil de exibir como nos exemplos anteriores, mas funciona perfeitamente.</p>
         </section>
     </main>
+
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
